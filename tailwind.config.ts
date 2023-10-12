@@ -8,13 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      screens: {
+        "xxs": {"max": "320px"},
+        "xs": {"max": "350px"},
+        "s": {"max": "400px"},
+        "l": {"max": "450px"},
+        "m": {"max": "560px"},
+        "xl": {"max": "1055px"}
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated'),
+  ],
 }
 export default config
