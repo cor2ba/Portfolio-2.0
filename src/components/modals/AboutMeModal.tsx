@@ -1,11 +1,11 @@
 import Exit from "@/assests/images/exit.png"
 import Image from "next/image"
 import { Modal } from "@/types/interfaces"
-import Me from "@/assests/images/me.jpg"
+import Me from "@/assests/images/me2.png"
 
 export default function AboutMeModal ({ modalAboutMe, setAboutMe }: Modal) {
     return (
-        <div className={`${container} ${!modalAboutMe && "hidden"} [&>img:nth-child(1)]:w-[250px] [&>img:nth-child(1)]:rounded-[16px] [&>img:nth-child(1)]:m-2 [&>img:nth-child(1)]:border-white [&>img:nth-child(1)]:border-[10px]`}>
+        <div className={`${container} ${!modalAboutMe && "hidden"} [&>img:nth-child(1)]:w-[400px] [&>img:nth-child(1)]:rounded-[16px] [&>img:nth-child(1)]:m-2 [&>img:nth-child(1)]:border-white [&>img:nth-child(1)]:border-[10px]`}>
             <Image src={Me} alt="Image"></Image>
             <div className="flex flex-col justify-center items-start text-center mt-3 mr-3 gap-5 [&>p]:text-white [&>p]:text-start [&>p]:text-xl [&>p]:s:text-lg [&>p]:font-mono">
                 <p>I graduated of Full-Stack developer web in Henry Bootcamp 💻</p>
