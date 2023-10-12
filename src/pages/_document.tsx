@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <title>Gabriel Cór2ba</title>
+      <title>Gabriel Córdoba</title>
       </Head>
       <body>
         <Main />
