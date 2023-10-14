@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Modal } from "@/types/interfaces"
 import { projects } from "@/assests/projects"
 import link from "@/assests/images/link.png"
+import github from "@/assests/images/github.png"
 
 export default function ProjectsModal ({ modalProjects, setProjects }: Modal) {
     return (
@@ -12,6 +13,9 @@ export default function ProjectsModal ({ modalProjects, setProjects }: Modal) {
                     <Image alt="" src={p.image}></Image>
                     <a target="_blank" href={p.url}>
                         <Image className="!w-[50px] !h-[50px] m-1 rounded-lg bg-black absolute top-0 right-0 z-50 cursor-pointer" alt="" src={link} />
+                    </a>
+                    <a target="_blank" href={p.repository}>
+                        <Image className="!w-[50px] !h-[50px] m-1 rounded-lg bg-black absolute top-0 left-0 z-50 cursor-pointer" alt="" src={github} />
                     </a>
                     <p className="absolute bottom-0 right-0 left-0 flex items-center justify-center font-sans text-white bg-black rounded-b-lg">{p.name}</p>
                 </div>
