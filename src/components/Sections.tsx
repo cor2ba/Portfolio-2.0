@@ -21,7 +21,7 @@ export default function Sections ({ setTechs, setAboutMe, setProjects, modalTech
                     <a
                         className={`${smallComponent} ${border}`}
                         target="_blank"
-                        href="https://drive.google.com/file/d/1hSSfv_Oyk4wINkqYXEaecbV0EaFbgf7n/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1oAiiqkPCjQC0_Q-ja9h1Ovxhtjc6paQl/view?usp=sharing"
                         >
                         <Image src={download} alt="Image"></Image>
                         <p className={smallText}>Download CV</p>
