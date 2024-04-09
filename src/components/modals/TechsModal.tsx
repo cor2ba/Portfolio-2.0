@@ -7,13 +7,13 @@ import { Tooltip } from 'react-tooltip'
 export default function TechsModal ({ modalTechs, setTechs }: Modal) {
     return (
         <div className={`${container} ${!modalTechs && "hidden"}`}>
-            {techs.map((t) => (
-                <div className="flex justify-center items-center h-[100px] w-[100px]" data-tooltip-id="my-tooltip" data-tooltip-content={t.name} >
+            {techs.map((t, index) => (
+                <div key={index} className="flex justify-center items-center h-[100px] w-[100px]" data-tooltip-id="my-tooltip" data-tooltip-content={t.name} >
                     <Image src={t.image} width={100} alt="Image"></Image>
-                    <Tooltip id="my-tooltip" />
                 </div>
             ))}
-            <Image onClick={() => setTechs(false)} className="absolute right-0 top-0 p-2 cursor-pointer" src={Exit} alt="Image"></Image>
+            <Image data-tooltip-id="my-tooltip" data-tooltip-content="View more" onClick={() => setTechs(false)} className="absolute right-0 top-0 p-2 cursor-pointer" src={Exit} alt="Image"></Image>
+            <Tooltip id="my-tooltip" />
         </div>
     )
 }

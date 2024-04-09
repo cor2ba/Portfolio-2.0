@@ -5,7 +5,6 @@ import { Tooltip } from 'react-tooltip'
 import { Modal } from "@/types/interfaces"
 
 export default function Sections ({ setTechs, setAboutMe, setProjects, modalTechs, modalAboutMe, modalProjects }: Modal) {
-    console.log(modalAboutMe)
     return (
         <>
             <section className={`flex gap-5 flex-wrap items-center justify-center ${(modalTechs || modalAboutMe || modalProjects) && "hidden"}`}>
@@ -44,8 +43,8 @@ export default function Sections ({ setTechs, setAboutMe, setProjects, modalTech
                     </a>
                 </div>
                 <div className={`${bigComponent} ${border} !flex-row flex-wrap gap-5 m:h-full`}>
-                    {techsMain.map(t => (
-                        <>
+                    {techsMain.map((t, index) => (
+                        <div key={index}>
                             {t.name === "View All" ? 
                              <div onClick={()=>setTechs(true)} className="flex flex-col cursor-pointer justify-between items-center text-center w-[90px]">
                                  <Image src={t.image} width={100} alt="Image"></Image>
@@ -55,7 +54,7 @@ export default function Sections ({ setTechs, setAboutMe, setProjects, modalTech
                                 <Tooltip id="my-tooltip" />
                             </div>
                             }
-                        </>                 
+                        </div>                 
                     ))}
                 </div>
             </section>
