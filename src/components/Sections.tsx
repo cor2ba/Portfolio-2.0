@@ -10,7 +10,7 @@ export default function Sections ({ setTechs, setAboutMe, setProjects, modalTech
             <section className={`flex gap-5 flex-wrap items-center justify-center ${(modalTechs || modalAboutMe || modalProjects) && "hidden"}`}>
                 <div className={`${bigComponent} ${border}`}>
                     <h2 className={name}>Gabriel Córdoba</h2>
-                    <p className={bigText}>{"<FrontEnd Developer />"}</p>
+                    <p className={bigText}>{"<Frontend Developer />"}</p>
                 </div>
                 <div className="flex gap-5 m:flex-wrap m:w-full">
                     <div onClick={() => setAboutMe(true)} className={`${smallComponent} ${border}`}>
@@ -20,7 +20,7 @@ export default function Sections ({ setTechs, setAboutMe, setProjects, modalTech
                     <a
                         className={`${smallComponent} ${border}`}
                         target="_blank"
-                        href="https://drive.google.com/file/d/1oAiiqkPCjQC0_Q-ja9h1Ovxhtjc6paQl/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1HCnUNCdjRwmRXlkzYsQQ88bnN33fkzvs/view"
                         >
                         <Image src={download} alt="Image"></Image>
                         <p className={smallText}>Download CV</p>

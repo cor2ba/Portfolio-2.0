@@ -14,9 +14,9 @@ export default function ProjectsModal({ modalProjects, setProjects }: Modal) {
                     <a target="_blank" href={p.url}>
                         <Image className={`${media} right-0`} alt="Link" src={link} />
                     </a>
-                    <a target="_blank" href={p.repository}>
+                    {p.repository && <a target="_blank" href={p.repository}>
                         <Image className={`${media} left-0`} alt="GitHub" src={github} />
-                    </a>
+                    </a>}
                     <p className="absolute bottom-0 right-0 left-0 flex items-center justify-center font-sans text-white bg-black rounded-b-lg">{p.name}</p>
                 </div>
             ))}
