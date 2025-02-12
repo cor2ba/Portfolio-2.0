@@ -1,13 +1,19 @@
-import mapify from "./mapify.png"
-import streamit from "./streamit.png"
-import vajillaselian from "./vajillaselian.png"
-import vira from "./vira.png"
-import pacs from "./pacs.png"
-import marb from "./marb.png"
-import ethos from "./ethos.png"
-import pado from "./pado.png"
+import mapify from "./mapify.webp"
+import streamit from "./streamit.webp"
+import vajillaselian from "./vajillaselian.webp"
+import vira from "./vira.webp"
+import pacs from "./pacs.webp"
+import marb from "./marb.webp"
+import ethos from "./ethos.webp"
+import pado from "./pado.webp"
+import elbosque from "./elbosque.webp"
+import primeburgers from "./primeburgers.webp"
+import randomlocation from "./randomlocation.webp"
 
 export const projects = [
+    {name: "EL BOSQUE", image: elbosque, url: "https://el-bosque-rp.vercel.app/"},
+    {name: "PRIME BURGERS", image: primeburgers, url: "https://prime-burgers.vercel.app/"},
+    {name: "RANDOM LOCATION", image: randomlocation, url: "https://random-locations.vercel.app/"},
     {name: "VIRA", image: vira, url: "https://www.viradoctores.com/"},
     {name: "NEURON PACS", image: pacs, url: "https://neuron-pacs.vercel.app/viewfinder", repository: "https://github.com/cor2ba/pacs"},
     {name: "MARB", image: marb, url: "https://marb-admin.vercel.app/"},

@@ -1,8 +1,8 @@
-import about from "./about.png"
-import certificate from "./certificate.png"
-import download from "./download.png"
-import henry from "./henry.png"
-import projects from "./projects.png"
+import about from "./about.webp"
+import certificate from "./certificate.webp"
+import download from "./download.webp"
+import henry from "./henry.webp"
+import projects from "./projects.webp"
 
 export {
     about,

@@ -1,26 +1,33 @@
-import Express from "./express.png"
-import Figma from "./figma.png"
-import Javascript from "./javascript.png"
-import Jira from "./jira.png"
-import Mongo from "./mongo.png"
-import React from "./react.png"
-import Sass from "./sass.png"
-import Tailwind from "./tailwind.png"
-import Typescript from "./typescript.png"
-import VSC from "./vsc.png"
-import Trello from "./trello.png"
-import GitHub from "./github.png"
+import Express from "./express.webp"
+import Figma from "./figma.webp"
+import Javascript from "./javascript.webp"
+import Jira from "./jira.webp"
+import Mongo from "./mongo.webp"
+import React from "./react.webp"
+import Sass from "./sass.webp"
+import Tailwind from "./tailwind.webp"
+import Typescript from "./typescript.webp"
+import VSC from "./vsc.webp"
+import Trello from "./trello.webp"
+import GitHub from "./github.webp"
 //--------------------------------------------------------
-import Typescriptmain from "./typescriptmain.png"
-import Javascriptmain from "./javascriptmain.png"
-import Reactmain from "./reactmain.png"
-import Nextmain from "./nextmain.png"
-import Tailwindmain from "./tailwindmain.png"
-import Postgresmain from "./postgresmain.png"
-import Reduxmain from "./reduxmain.png"
-import Viewall from "../images/viewall.png"
+import Typescriptmain from "./typescriptmain.webp"
+import Javascriptmain from "./javascriptmain.webp"
+import Reactmain from "./reactmain.webp"
+import Nextmain from "./nextmain.webp"
+import Tailwindmain from "./tailwindmain.webp"
+import Postgresmain from "./postgresmain.webp"
+import Reduxmain from "./reduxmain.webp"
+import Viewall from "../images/viewall.webp"
 
 export const techs = [
+    {name: "Typescript", image: Typescriptmain},
+    {name: "Javascript", image: Javascriptmain},
+    {name: "React ReactNative", image: Reactmain},
+    {name: "Next JS", image: Nextmain},
+    {name: "Tailwind", image: Tailwindmain},
+    {name: "Postgres SQL", image: Postgresmain},
+    {name: "Redux", image: Reduxmain},
     {name: "Sass", image: Sass},
     {name: "Express", image: Express},
     {name: "Figma", image: Figma},

@@ -23,7 +23,7 @@ export default function Sections ({ setTechs, setAboutMe, setProjects, modalTech
                         href="https://drive.google.com/file/d/1HCnUNCdjRwmRXlkzYsQQ88bnN33fkzvs/view"
                         >
                         <Image src={download} alt="Image"></Image>
-                        <p className={smallText}>Download CV</p>
+                        <p className={smallText}>Curriculum</p>
                     </a>
                 </div>
             </section>
@@ -64,8 +64,8 @@ export default function Sections ({ setTechs, setAboutMe, setProjects, modalTech
 
 const name = "text-medium text-[#ffffff] h-[100px] flex items-center font-semibold justify-center text-5xl m:text-4xl xs:!text-3xl text-center"
 const border = "shadow-[rgba(30,_30,_26,_0.4)_2px_2px_8px_4px] hover:shadow-[rgba(255,255,255,_0.4)_2px_2px_8px_4px]"
-const smallComponent = "flex flex-col w-[240px] h-[240px] bg-[#0000009] cursor-pointer m:w-full items-center justify-center rounded-[16px] p-4 [&>img]:w-[100px] [&>img]:h-[100px]"
+const smallComponent = "flex flex-col w-[240px] h-[240px] bg-[#000000e6] cursor-pointer m:w-full items-center justify-center rounded-[16px] p-4 [&>img]:w-[100px] [&>img]:h-[100px]"
 const smallText = "font-light text-[#ffffffb2] text-3xl text-center"
 const viewMoreText = "font-light text-[#ffffffb2] text-[18px] text-center"
-const bigComponent = "flex flex-col w-[500px] h-[240px] bg-[#0000009] m:w-full items-center justify-center rounded-[16px] p-4 [&>img]:w-[100px] [&>img]:h-[100px]"
+const bigComponent = "flex flex-col w-[500px] h-[240px] bg-[#000000e6] m:w-full items-center justify-center rounded-[16px] p-4 [&>img]:w-[100px] [&>img]:h-[100px]"
 const bigText = "font-light	text-[#ffffffb2] text-3xl text-center m:text-2xl xs:!text-xl"
